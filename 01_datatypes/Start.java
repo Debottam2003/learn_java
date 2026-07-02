@@ -1,3 +1,4 @@
+// Primitive data types
 // | Data Type | Size            | Default Value | Example                          |
 // | --------- | --------------- | ------------- | -------------------------------- |
 // | byte      | 1 byte          | 0             | byte age = 25;                   |
@@ -31,16 +32,19 @@ public class Start {
         char grade = 'A';
         boolean isJavaFun = true;
 
-        // Keywords e.g. int, float, double, char, boolean, class, public, static, void, etc. 
+        // Keywords e.g. int, float, double, char, boolean, class, public, static, void,
+        // etc.
         // are reserved words in Java and cannot be used as variable names.
 
         // Identifiers are names given to variables, methods, classes, etc. in Java.
 
-        // Values are the actual data that is stored in variables. For example, in the line "int salary = 50000;", the value is 50000.
+        // Values are the actual data that is stored in variables. For example, in the
+        // line "int salary = 50000;", the value is 50000.
 
         // int age; declaration of variable age of type int
         // age = 25; initialization of variable age with value 25
-        // int age = 25; declaration and initialization of variable age of type int with value 25 : definition
+        // int age = 25; declaration and initialization of variable age of type int with
+        // value 25 : definition
 
         // Print the values
         System.out.println("Age: " + ageGagan);
@@ -51,5 +55,37 @@ public class Start {
         System.out.println("Pi: " + pi);
         System.out.println("Grade: " + grade);
         System.out.println("Is Java Fun? " + isJavaFun);
+
+        // Non-Primitive Data Types:
+
+        // String
+        // Arrays
+        // Classes
+        // Objects
+        // Interfaces
+        // Enums
+
+        String name1 = "Gagan";
+        String name2 = name1;
+        System.out.println(name1);
+        System.out.println(name2);
+
+        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr2 = arr;
+        arr[0] = 10;
+        System.out.println(arr[0]);
+        System.out.println(arr2[0]);
+        arr2[2] = 333;
+        System.out.println(arr[2]);
+        System.out.println(arr2[2]);
+
+        // Wrapper classes are used to convert primitive data types into objects.
+        // Each primitive data type has a corresponding wrapper class in Java.
+        // For example, the wrapper class for int is Integer, for double is Double, and
+        // for boolean is Boolean.
+
+        Integer intVal = Integer.parseInt("156");
+        System.out.println(intVal);
+
     }
 }
