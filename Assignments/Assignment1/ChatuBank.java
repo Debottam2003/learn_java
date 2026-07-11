@@ -32,8 +32,13 @@ public class ChatuBank {
     }
 
     public void WITHDRAWL(double amount) {
-        this.BALANCE = this.BALANCE - amount;
-        System.out.println("Successfully WITHDRAWLED!");
+        if (amount <= this.BALANCE) {
+            this.BALANCE = this.BALANCE - amount;
+            System.out.println("Successfully WITHDRAWLED!");
+        } else {
+            System.out.println("Not Enough Balance");
+            System.out.println("Your Current Balance: " + this.BALANCE);
+        }
     }
 
     public void DEPOSIT(double amount) {
