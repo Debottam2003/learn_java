@@ -26,8 +26,9 @@ public class ChatuBank {
         this.BRANCH = BRANCH;
     }
 
-    public String BALANCE_CHECK() {
-        return this.BALANCE + "₹";
+    public double BALANCE_CHECK() {
+        System.out.println(this.BALANCE);
+        return this.BALANCE;
     }
 
     public void WITHDRAWL(double amount) {
