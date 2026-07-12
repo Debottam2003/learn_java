@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         // Object creation
-        Human human1 = new Human("Gagan", 24);
-        Human human2 = new Human("Roni", 23);
+        Human human1 = new Human("Gagan", 24, "Male", "India");
+        Human human2 = new Human("Roni", 23, "Male", "India");
         human1.eat();
         human2.sleep();
     }

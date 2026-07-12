@@ -27,4 +27,9 @@ public class Super {
         System.out.println(this.gender);
         System.out.println(this.country);
     }
+
+    public String toString() {
+        return this.name + " " + this.age + " " + this.gender + " " + this.country;
+    }
+
 }

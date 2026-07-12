@@ -49,7 +49,7 @@ public class Human {
         System.out.println(this.name + " is sleeping");
     }
 
-    public void introduce() {
+    void introduce() {
         System.out.println(this.name);
         System.out.println(this.age);
         System.out.println(this.gender);

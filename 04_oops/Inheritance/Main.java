@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Inheritance");
         Super sp1 = new Super("gagan", 24, "male", "india");
+        System.out.println(sp1);
         sp1.introduce();
         sp1.eat();
         sp1.sleep();
